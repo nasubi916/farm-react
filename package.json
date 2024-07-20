@@ -40,6 +40,7 @@
     "typescript": "^5.5.3",
     "react-refresh": "^0.14.2",
     "nanostores": "^0.10.3",
+    "@nanostores/react": "^0.7.2",
     "wouter": "^3.3.1"
   }
 }

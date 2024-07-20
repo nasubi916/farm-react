@@ -1,7 +1,8 @@
+import path from "node:path";
 import { defineConfig } from "@farmfe/core";
-import path from "path";
 
 export default defineConfig({
+  root: path.join(process.cwd(), "client"),
   plugins: ["@farmfe/plugin-react"],
   server: {
     port: 3000,
@@ -9,7 +10,7 @@ export default defineConfig({
   compilation: {
     resolve: {
       alias: {
-        "@": path.join(process.cwd(), "./src"),
+        "@": path.join(process.cwd(), "src/"),
       },
     },
   },
