@@ -1,9 +1,8 @@
 import { useStore } from "@nanostores/react";
 import { type ReactElement } from "react";
-import { $user } from "@/stores/user";
+import { $users } from "@/stores/useUser";
 
 export function About(): ReactElement {
-  const user = useStore($user);
-  console.log(user);
-  return <>About :</>
+  const users = useStore($users);
+  return <>About : {users.map((user) => user)}</>;
 }

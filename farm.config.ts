@@ -2,7 +2,6 @@ import path from "node:path";
 import { defineConfig } from "@farmfe/core";
 
 export default defineConfig({
-  root: path.join(process.cwd(), "client"),
   plugins: ["@farmfe/plugin-react"],
   server: {
     port: 3000,
