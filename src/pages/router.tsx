@@ -5,6 +5,7 @@ import { About } from "./about";
 export function App(): ReactElement {
   return (
     <>
+      <Link to="/">Home</Link>
       <Link to="/about">About</Link>
       <br />
       <Switch>
