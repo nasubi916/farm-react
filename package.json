@@ -1,6 +1,7 @@
 {
   "name": "react-template",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "dev": "farm start",
     "start": "farm start",
@@ -8,6 +9,7 @@
     "preview": "farm preview",
     "fmt": "prettier --write ./src/",
     "lint": "eslint --ext .ts,.tsx ./src",
+    "test": "tsc && prettier --check ./src/ --check && eslint --ext .ts,.tsx ./src ",
     "clean": "farm clean"
   },
   "dependencies": {
